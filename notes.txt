@@ -1,0 +1,25 @@
+- runApp() builds the main widget and cals build() on it. 
+- build() method returns the widgets("widget tree") which should be rendered onto the screen
+- Widgets are the core building blocks of Flutter user interfaces. 
+- Scaffold is a Material Design widget that provides a basic structure for a typical screen in a mobile app. 
+Types of wodgets 
+    - Output and Input(VISIBLE) widgets - these are make visible changes to the screen like buttons 
+    - Layout and Control(Invisible) widgets - these help in the structuring of the page like columns, rows, containers
+- Lists help to group related data. Created with [] brackets
+    Example:
+        var questions = [
+            'What is your name', 
+            'Where do you live'];
+    Data in lists can be accessed via the index of list items - the important thing here is, that this index starts at zero (0)!
+        var names = ['Max', 'Manu', 'Julie'];
+        // Max has index 0, Manu has index 1, Julie has index 2
+        print(names[0]); // prints 'Max' in the console
+        print(names[2]); // prints 'Julie' in the console
+        print(names[3]); // would throw an error because there is no element with index 3 in the list
+Types Of Widgets 
+    - Stateless widgets are those that do not have any mutable state, i.e., their properties cannot change once they are initialized. 
+        - They are purely based on their configuration and render a UI based on that. Stateless widgets are preferred in cases where the UI does not need to change based on user interactions or data changes. Examples of stateless widgets include icons, text, images, etc.
+    - stateful widgets are those that can change their properties over time. T
+        - they have mutable state, i.e., they can update their UI based on user interactions or changes in data. Stateful widgets are used when the UI needs to be updated dynamically based on user actions or data changes. Examples of stateful widgets include buttons, checkboxes, text fields, etc.
+    - Without the setState() method : doesnot change the property value but it will not rerun the build() method. Hece updates will not reflected on the screen. 
+    
