@@ -1,6 +1,9 @@
 // This line imports the material.dart library from the flutter package, which contains all of the widgets and tools needed to create Material Design applications in Flutter.
 import 'package:flutter/material.dart';
 
+// importing question.dart
+import './questions.dart';
+
 //it runs the runApp() function, passing in an instance of MyApp as an argument.
 // void main() {
 //   runApp(MyApp());
@@ -40,7 +43,7 @@ class MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
-            Text(questions[questionIndex]),
+            Question(questions[questionIndex]),
             ElevatedButton(
                 onPressed: answerQuestions, child: Text('Answer')),
             ElevatedButton(

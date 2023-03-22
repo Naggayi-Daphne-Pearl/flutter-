@@ -22,4 +22,6 @@ Types Of Widgets
     - stateful widgets are those that can change their properties over time. T
         - they have mutable state, i.e., they can update their UI based on user interactions or changes in data. Stateful widgets are used when the UI needs to be updated dynamically based on user actions or data changes. Examples of stateful widgets include buttons, checkboxes, text fields, etc.
     - Without the setState() method : doesnot change the property value but it will not rerun the build() method. Hece updates will not reflected on the screen. 
-    
+
+ Conversion Rule
+    - Have one widget per file
